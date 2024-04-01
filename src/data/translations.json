@@ -1,0 +1,146 @@
+{
+  "nextLabel": {
+    "en": "Next"
+  },
+  "backLabel": {
+    "en": "Back"
+  },
+  "finishLabel": {
+    "en": "Finish"
+  },
+  "ascvdTitle": {
+    "en": "Step 1: Evidence of established Atherosclerotic CardioVascular Disease (ASCVD)?"
+  },
+  "ascvdSubtitle": {
+    "en": "Check any that applies:"
+  },
+  "acsLabel": {
+    "en": "Previous ACS (MI or UA)"
+  },
+  "revascularizationLabel": {
+    "en": "Undergone revascularization procedures (PCI, CABG, or other arterial revascularization)"
+  },
+  "strokeLabel": {
+    "en": "Stroke or TIA"
+  },
+  "padLabel": {
+    "en": "Peripheral arterial disease (PAD)"
+  },
+  "angioLabel": {
+    "en": "Significant plaque on angiography or CT scan (usually at least 50% stenosis)"
+  },
+  "carotidLabel": {
+    "en": "Significant plaque on carotid ultrasound (usually at least 50% stenosis)"
+  },
+  "dmTitle": {
+    "en": "Step 2: Diabetes Mellitus Assessment"
+  },
+  "dmSubtitle": {
+    "en": "Does your patient have Diabetes Mellitus (DM)?"
+  },
+  "dmLabel": {
+    "en": "Yes"
+  },
+  "targetOrganDamageLabel": {
+    "en": "Target organ damage (albuminuria, retinopathy, neuropathy)?"
+  },
+  "majorAscvdRiskFactorsTitle": {
+    "en": "Other Major ASCVD Risk factors? (check all that apply)"
+  },
+  "htnLabel": {
+    "en": "Hypertension"
+  },
+  "dyslipLabel": {
+    "en": "Dyslipidemia"
+  },
+  "smokerLabel": {
+    "en": "Smoker"
+  },
+  "familyLabel": {
+    "en": "Family history of premature coronary disease (usually ealier than 55 for men, 60 for women)"
+  },
+  "onsetDurationTitle": {
+    "en": "Onset and Duration (choose one that best describes your patient)"
+  },
+  "youngRecentLabel": {
+    "en": "Young patients (less than 35 for T1DM, less than 50 for T2DM) with LESS than 10 years duration"
+  },
+  "longLabel": {
+    "en": "DM with AT LEAST 10 years duration"
+  },
+  "t1dmLabel": {
+    "en": "T1DM of long duration (more than 20 years)"
+  },
+  "ckdTitle": {
+    "en": "Step 3: Chronic Kindey Disease (CKD) Assessment"
+  },
+  "ckdSubtitle": {
+    "en": "Does your patient have known CKD? (leave empty if No)"
+  },
+  "severeCkdLabel": {
+    "en": "Yes - Severe CKD (eGFR less than 30 mL/min/1.73m²)"
+  },
+  "moderateCkdLabel": {
+    "en": "Yes - Moderate CKD (eGFR between 30 and 60 mL/min/1.73m²)"
+  },
+  "eGfrFindLabel": {
+    "en": "I don't know eGFR, let's calulate"
+  },
+  "eGfrFindDescription": {
+    "en": "eGFR estimation is based on CKD-EPI (2021), without race coefficient"
+  },
+  "creatinineLabel": {
+    "en": "Serum Creatinine (mg/dL)"
+  },
+  "creatininePlaceholder": {
+    "en": "Creatinine level"
+  },
+  "ageLabel": {
+    "en": "Patient age"
+  },
+  "agePlaceholder": {
+    "en": "Age"
+  },
+  "sexLabel": {
+    "en": "Patient gender"
+  },
+  "maleLabel": {
+    "en": "Male"
+  },
+  "femaleLabel": {
+    "en": "Female"
+  },
+  "eGfr": {
+    "en": "eGfr"
+  },
+  "additionalDataTitle": {
+    "en": "Step 4: Additional data needed for risk estimation"
+  },
+  "additionalDataSubtitle": {
+    "en": "No established ASCVD or Diabetes. 10 year CV risk estimation"
+  },
+  "additionalDataSecondSubtitle": {
+    "en": "and checking for markedly elevated single risk factors"
+  },
+  "sbpLabel": {
+    "en": "Systolic BP (mmHg)"
+  },
+  "dbpLabel": {
+    "en": "Diastolic BP (mmHg)"
+  },
+  "tcLabel": {
+    "en": "Total Cholesterol (mg/dL)"
+  },
+  "hdlLabel": {
+    "en": "HDL Cholesterol (mg/dL)"
+  },
+  "ldlLabel": {
+    "en": "LDL Cholesterol (mg/dL)"
+  },
+  "smokesLabel": {
+    "en": "Smoker? (Yes/No)"
+  },
+  "tenYearRiskTitle": {
+    "en": "10 year risk of CV event"
+  }
+}

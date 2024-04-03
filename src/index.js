@@ -3,11 +3,20 @@ import ReactDOM from "react-dom/client"
 import "./index.scss"
 import App from "./App"
 import reportWebVitals from "./reportWebVitals"
+import { StepProvider } from "./providers/step"
+import { LanguageProvider } from "./providers/language"
+import { RiskProvider } from "./providers/risk"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
   <React.StrictMode>
-    <App />
+    <LanguageProvider>
+      <StepProvider>
+        <RiskProvider>
+          <App />
+        </RiskProvider>
+      </StepProvider>
+    </LanguageProvider>
   </React.StrictMode>
 )
 

@@ -28,7 +28,7 @@ function App() {
         <Step id="ckd">
           <CkdStep />
         </Step>
-        <Step id="Data">
+        <Step id="additionalData">
           <AdditionalDataStep />
         </Step>
       </main>

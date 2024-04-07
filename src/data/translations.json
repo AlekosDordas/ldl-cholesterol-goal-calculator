@@ -113,6 +113,9 @@
   "eGfr": {
     "en": "eGfr"
   },
+  "creatinineAgeGenderMissing": {
+    "en": "Please enter correct creatinine, age and gender values"
+  },
   "additionalDataTitle": {
     "en": "Step 4: Additional data needed for risk estimation"
   },

@@ -1,54 +1,21 @@
-import { useCallback, useRef, useState } from "react"
-import { useLanguage } from "../../../providers/language"
-import { useRisk } from "../../../providers/risk"
 import Checkbox from "../../shared/checkbox"
+import { useStep } from "./use-step.hook"
 
 const DmStep = () => {
-  const { translatedContent: texts } = useLanguage()
-  const { setRisk } = useRisk()
-
-  const dm = useRef()
-  const targetOrganDamage = useRef()
-  const htn = useRef()
-  const dyslip = useRef()
-  const smoker = useRef()
-  const family = useRef()
-  const youngRecent = useRef()
-  const long = useRef()
-  const t1dm = useRef()
-
-  const [hasDm, setHasDm] = useState(dm.current?.checked || false)
-
-  const handleFormChange = useCallback(() => {
-    if (dm.current?.checked) {
-      setHasDm(true)
-      const checkedCount = [
-        targetOrganDamage.current,
-        htn.current,
-        dyslip.current,
-        smoker.current,
-        family.current,
-        youngRecent.current,
-        long.current,
-        t1dm.current,
-      ].filter(i => i?.checked).length
-
-      if (
-        checkedCount >= 3 ||
-        targetOrganDamage.current?.checked ||
-        t1dm.current?.checked
-      ) {
-        setRisk(4)
-      } else if (checkedCount >= 1 || long.current?.checked) {
-        setRisk(3)
-      } else {
-        setRisk(2)
-      }
-    } else {
-      setHasDm(false)
-      setRisk(1)
-    }
-  }, [setRisk])
+  const {
+    texts,
+    dm,
+    targetOrganDamage,
+    htn,
+    dyslip,
+    smoker,
+    family,
+    youngRecent,
+    long,
+    t1dm,
+    hasDm,
+    handleFormChange,
+  } = useStep()
 
   return (
     <form onChange={handleFormChange}>

@@ -11,11 +11,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
   <React.StrictMode>
     <LanguageProvider>
-      <StepProvider>
-        <RiskProvider>
+      <RiskProvider>
+        <StepProvider>
           <App />
-        </RiskProvider>
-      </StepProvider>
+        </StepProvider>
+      </RiskProvider>
     </LanguageProvider>
   </React.StrictMode>
 )

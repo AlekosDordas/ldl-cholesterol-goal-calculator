@@ -5,12 +5,14 @@ import {
   useEffect,
   useCallback,
 } from "react"
+import { useRisk } from "./risk"
 
 const StepContext = createContext()
 
 export const StepProvider = ({ children }) => {
   const [step, setStep] = useState()
   const [stepOrder, setStepOrder] = useState([])
+  const { risk } = useRisk()
 
   useEffect(() => {
     stepOrder.length && step === undefined && setStep(stepOrder[0])
@@ -19,10 +21,12 @@ export const StepProvider = ({ children }) => {
   const nextStep = useCallback(() => {
     if (!stepOrder.length || !step) return
     const currentIndex = stepOrder.indexOf(step)
-    if (currentIndex < stepOrder.length - 1) {
+    if (risk >= 4 || currentIndex >= stepOrder.length - 1) {
+      setStep("finish")
+    } else {
       setStep(stepOrder[currentIndex + 1])
     }
-  }, [step, stepOrder])
+  }, [risk, step, stepOrder])
 
   const previousStep = useCallback(() => {
     if (!stepOrder.length || !step) return
@@ -32,13 +36,9 @@ export const StepProvider = ({ children }) => {
     }
   }, [step, stepOrder])
 
-  const changeStep = useCallback(newStep => {
-    setStep(newStep)
-  }, [])
-
   return (
     <StepContext.Provider
-      value={{ step, changeStep, setStepOrder, nextStep, previousStep }}
+      value={{ step, setStepOrder, nextStep, previousStep }}
     >
       {children}
     </StepContext.Provider>

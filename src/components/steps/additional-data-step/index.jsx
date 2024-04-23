@@ -1,3 +1,4 @@
+import { Title, Subtitle } from "../../shared/titles"
 import Checkbox from "../../shared/checkbox"
 import Dropdown from "../../shared/dropdown"
 import Input from "../../shared/input"
@@ -23,9 +24,8 @@ const AdditionalDataStep = () => {
     <form onChange={handleFormChange}>
       {!ready && <div>Form is not ready</div>}
       {score2 && <div>10 year risk of CV event: {score2}%</div>}
-      <h1>{texts.additionalDataTitle}</h1>
-      <h2>{texts.additionalDataSubtitle}</h2>
-      <h3>{texts.additionalDataSecondSubtitle}</h3>
+      <Title>{texts.additionalDataTitle}</Title>
+      <Subtitle>{texts.additionalDataSubtitle}</Subtitle>
       <Input type="number" min="0" ref={age} id="age" label={texts.ageLabel} />
       <Input type="number" min="0" ref={sbp} id="sbp" label={texts.sbpLabel} />
       <Input type="number" min="0" ref={dbp} id="dbp" label={texts.dbpLabel} />

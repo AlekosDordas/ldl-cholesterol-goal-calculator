@@ -1,0 +1,35 @@
+.Risk {
+  display: flex;
+  gap: 16px;
+  justify-content: start;
+  align-items: center;
+  border-radius: 16px;
+  padding: 16px;
+  min-height: 84px;
+
+  &--low {
+    background-color: #e7f4e8;
+  }
+
+  &--medium {
+    background-color: #eaf2ff;
+  }
+
+  &--high {
+    background-color: #fff4e4;
+  }
+
+  &--veryHigh {
+    background-color: #ffe2e5;
+  }
+
+  &__title {
+    font-size: var(--main-text-fs);
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    font-size: var(--main-text-fs);
+    font-weight: 400;
+  }
+}

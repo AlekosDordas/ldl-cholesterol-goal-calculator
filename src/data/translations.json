@@ -8,6 +8,30 @@
   "finishLabel": {
     "en": "Finish"
   },
+  "lowRiskTitle": {
+    "en": "Low Risk"
+  },
+  "lowRiskSubtitle": {
+    "en": "LDL-C goal is < 116 mg/dL"
+  },
+  "mediumRiskTitle": {
+    "en": "Medium Risk"
+  },
+  "mediumRiskSubtitle": {
+    "en": "LDL-C goal is < 100 mg/dL"
+  },
+  "highRiskTitle": {
+    "en": "High Risk"
+  },
+  "highRiskSubtitle": {
+    "en": "LDL-C goal is < 70 mg/dL and 50% reduction from baseline"
+  },
+  "veryHighRiskTitle": {
+    "en": "Very High Risk"
+  },
+  "veryHighRiskSubtitle": {
+    "en": "LDL-C goal is < 55 mg/dL and 50% reduction from baseline"
+  },
   "ascvdTitle": {
     "en": "Step 1: Evidence of established Atherosclerotic CardioVascular Disease (ASCVD)?"
   },
@@ -120,10 +144,7 @@
     "en": "Step 4: Additional data needed for risk estimation"
   },
   "additionalDataSubtitle": {
-    "en": "No established ASCVD or Diabetes. 10 year CV risk estimation"
-  },
-  "additionalDataSecondSubtitle": {
-    "en": "and checking for markedly elevated single risk factors"
+    "en": "No established ASCVD or Diabetes. 10 year CV risk estimation and checking for markedly elevated single risk factors"
   },
   "sbpLabel": {
     "en": "Systolic BP (mmHg)"

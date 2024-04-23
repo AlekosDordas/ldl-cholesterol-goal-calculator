@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import { useStep } from "./providers/step"
-import { useRisk } from "./providers/risk"
 import Header from "./components/header"
+import Risk from "./components/risk"
 import Step from "./components/shared/step"
 import AscvdStep from "./components/steps/ascvd-step"
 import DmStep from "./components/steps/dm-step"
@@ -10,7 +10,6 @@ import AdditionalDataStep from "./components/steps/additional-data-step"
 
 function App() {
   const { setStepOrder, nextStep, previousStep } = useStep()
-  const { risk } = useRisk()
 
   useEffect(() => {
     setStepOrder(["ascvd", "dm", "ckd", "additionalData"])
@@ -19,8 +18,8 @@ function App() {
   return (
     <>
       <Header />
-      <header>Risk: {risk}</header>
       <main>
+        <Risk />
         <Step id="ascvd">
           <AscvdStep />
         </Step>

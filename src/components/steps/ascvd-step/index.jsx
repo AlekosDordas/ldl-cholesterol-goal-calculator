@@ -1,3 +1,4 @@
+import { Title, Subtitle } from "../../shared/titles"
 import Checkbox from "../../shared/checkbox"
 import { useStep } from "./use-step.hook"
 
@@ -15,8 +16,8 @@ const AscvdStep = () => {
 
   return (
     <form onChange={handleFormChange}>
-      <h1>{texts.ascvdTitle}</h1>
-      <h2>{texts.ascvdSubtitle}</h2>
+      <Title>{texts.ascvdTitle}</Title>
+      <Subtitle>{texts.ascvdSubtitle}</Subtitle>
       <Checkbox ref={acs} id="acs" label={texts.acsLabel} />
       <Checkbox
         ref={revascularization}

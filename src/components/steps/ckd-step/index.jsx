@@ -1,3 +1,4 @@
+import { Title, Subtitle } from "../../shared/titles"
 import Checkbox from "../../shared/checkbox"
 import Dropdown from "../../shared/dropdown"
 import Input from "../../shared/input"
@@ -19,8 +20,8 @@ const CkdStep = () => {
 
   return (
     <form onChange={handleFormChange}>
-      <h1>{texts.ckdTitle}</h1>
-      <h2>{texts.ckdSubtitle}</h2>
+      <Title>{texts.ckdTitle}</Title>
+      <Subtitle>{texts.ckdSubtitle}</Subtitle>
       {!showEgfrCalculator && (
         <>
           <Checkbox

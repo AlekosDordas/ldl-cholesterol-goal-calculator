@@ -1,6 +1,7 @@
 .Step {
   position: relative;
   display: none;
+  margin-top: 24px;
 
   &.is-visible {
     display: block;

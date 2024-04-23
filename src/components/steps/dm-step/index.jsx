@@ -1,3 +1,4 @@
+import { Title, Subtitle } from "../../shared/titles"
 import Checkbox from "../../shared/checkbox"
 import { useStep } from "./use-step.hook"
 
@@ -19,8 +20,8 @@ const DmStep = () => {
 
   return (
     <form onChange={handleFormChange}>
-      <h1>{texts.dmTitle}</h1>
-      <h2>{texts.dmSubtitle}</h2>
+      <Title>{texts.dmTitle}</Title>
+      <Subtitle>{texts.dmSubtitle}</Subtitle>
       <Checkbox ref={dm} id="dm" label={texts.dmLabel} />
       {hasDm && (
         <>

@@ -1,6 +1,6 @@
 import Language from "./language"
 import logo from "../../assets/images/logo.svg"
-import "./index.scss"
+import "./header.scss"
 
 const Header = () => {
   return (

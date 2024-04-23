@@ -1,5 +1,5 @@
 import { forwardRef } from "react"
-import "./style.scss"
+import "./checkbox.scss"
 
 const Checkbox = forwardRef(({ label, id }, ref) => (
   <span className="Checkbox">

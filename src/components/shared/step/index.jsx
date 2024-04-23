@@ -1,5 +1,5 @@
 import { useStep } from "../../../providers/step"
-import "./style.scss"
+import "./step.scss"
 
 const Step = ({ id, children }) => {
   const { step } = useStep()

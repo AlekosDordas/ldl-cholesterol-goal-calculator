@@ -1,5 +1,5 @@
 import { forwardRef } from "react"
-import "./style.scss"
+import "./dropdown.scss"
 
 const Dropdown = forwardRef(({ id, label, options }, ref) => (
   <span className="Dropdown">

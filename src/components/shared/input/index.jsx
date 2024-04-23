@@ -1,5 +1,5 @@
 import { forwardRef } from "react"
-import "./style.scss"
+import "./input.scss"
 
 const Input = forwardRef(
   ({ type = "text", min, step, id, label, placeholder }, ref) => {

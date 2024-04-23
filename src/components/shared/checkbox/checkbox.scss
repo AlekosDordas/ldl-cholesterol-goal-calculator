@@ -1,4 +1,33 @@
 .Checkbox {
   position: relative;
   display: block;
+
+  input {
+    display: none;
+  }
+
+  label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    border: 1px solid #dedede;
+    cursor: pointer;
+  }
+
+  &__icon {
+    min-width: 12px;
+  }
+
+  &--checked {
+    label {
+      background: #eaf2ff;
+      border-color: #eaf2ff;
+    }
+  }
 }

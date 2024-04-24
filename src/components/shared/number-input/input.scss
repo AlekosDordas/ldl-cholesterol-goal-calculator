@@ -1,0 +1,54 @@
+.NumberInput {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+
+  label {
+    font-size: var(--main-text-fs);
+    font-weight: 700;
+    flex-grow: 1;
+  }
+
+  &__controller {
+    flex-grow: 0;
+  }
+
+  button {
+    width: 24px;
+    height: 24px;
+    background: #eaf2ff;
+    font-weight: 900;
+    line-height: 1;
+    color: #006ffd;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:disabled {
+      color: #c5c6cc;
+      background: #f5f6fa;
+      cursor: not-allowed;
+    }
+  }
+
+  input,
+  input:focus {
+    display: inline;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    color: #1f2024;
+    width: 50px;
+    text-align: center;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      appearance: none;
+      margin: 0;
+    }
+  }
+}

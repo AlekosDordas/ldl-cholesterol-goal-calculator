@@ -1,4 +1,35 @@
 .Dropdown {
   position: relative;
   display: block;
+
+  label,
+  select {
+    display: none;
+  }
+
+  &__toggler {
+    display: inline-flex;
+    width: 100%;
+    background: #f8f9fe;
+    border-radius: 16px;
+    padding: 4px;
+  }
+
+  &__option {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    font-size: var(--main-text-fs);
+    font-weight: 700;
+    border-radius: 16px;
+    color: #71727a;
+    cursor: pointer;
+
+    &--selected {
+      background: white;
+      color: black;
+    }
+  }
 }

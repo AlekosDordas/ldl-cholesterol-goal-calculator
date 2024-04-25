@@ -7,9 +7,10 @@ import AscvdStep from "./components/steps/ascvd-step"
 import DmStep from "./components/steps/dm-step"
 import CkdStep from "./components/steps/ckd-step"
 import AdditionalDataStep from "./components/steps/additional-data-step"
+import Footer from "./components/footer"
 
 function App() {
-  const { setStepOrder, nextStep, previousStep } = useStep()
+  const { setStepOrder } = useStep()
 
   useEffect(() => {
     setStepOrder(["ascvd", "dm", "ckd", "additionalData"])
@@ -32,12 +33,8 @@ function App() {
         <Step id="additionalData">
           <AdditionalDataStep />
         </Step>
-        <Step id="finish">Finish</Step>
       </main>
-      <footer>
-        <button onClick={previousStep}>Previous</button>
-        <button onClick={nextStep}>Next</button>
-      </footer>
+      <Footer />
     </>
   )
 }

@@ -2,8 +2,8 @@
   "nextLabel": {
     "en": "Next"
   },
-  "backLabel": {
-    "en": "Back"
+  "previousLabel": {
+    "en": "Previous"
   },
   "finishLabel": {
     "en": "Finish"
@@ -166,5 +166,11 @@
   },
   "tenYearRiskTitle": {
     "en": "10 year risk of CV event"
+  },
+  "creditsLine1": {
+    "en": "65+ Outpatient Clinic - Department of Cardiology"
+  },
+  "creditsLine2": {
+    "en": "General Hospital Sismanogleio - Am. Fleming"
   }
 }

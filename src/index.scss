@@ -19,6 +19,17 @@ body {
   box-sizing: border-box;
 }
 
+html,
+body,
+.page {
+  height: 100%;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   padding: 0 var(--side-paddings);
 }

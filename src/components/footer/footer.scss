@@ -1,0 +1,48 @@
+.Footer {
+  position: relative;
+  margin-top: auto;
+  padding: var(--side-paddings);
+
+  &__nav {
+    display: flex;
+    gap: 8px;
+
+    &-button {
+      flex-grow: 1;
+      appearance: none;
+      border-radius: 12px;
+      padding: 12px;
+      font-size: var(--main-text-fs);
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      border: 2px solid #006ffd;
+      color: #006ffd;
+      cursor: pointer;
+      transition: transform 0.1s ease-in-out;
+
+      &--primary {
+        background-color: #006ffd;
+        color: white;
+      }
+
+      &:active {
+        transform: scale(0.99);
+      }
+    }
+  }
+
+  hr {
+    margin: 16px 0;
+    border: none;
+    border-top: 1px solid #d4d6dd;
+  }
+
+  &__credits {
+    text-align: center;
+    font-size: var(--main-text-fs);
+    color: #71727a;
+  }
+}

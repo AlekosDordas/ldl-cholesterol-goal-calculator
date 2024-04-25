@@ -4,6 +4,7 @@ import {
   useContext,
   useEffect,
   useCallback,
+  useMemo,
 } from "react"
 import { useRisk } from "./risk"
 
@@ -36,9 +37,19 @@ export const StepProvider = ({ children }) => {
     }
   }, [step, stepOrder])
 
+  const isFirst = useMemo(
+    () => stepOrder?.indexOf(step) === 0,
+    [step, stepOrder]
+  )
+
+  const isLast = useMemo(
+    () => stepOrder?.indexOf(step) === stepOrder?.length - 1 || risk >= 4,
+    [risk, step, stepOrder]
+  )
+
   return (
     <StepContext.Provider
-      value={{ step, setStepOrder, nextStep, previousStep }}
+      value={{ step, setStepOrder, nextStep, previousStep, isFirst, isLast }}
     >
       {children}
     </StepContext.Provider>

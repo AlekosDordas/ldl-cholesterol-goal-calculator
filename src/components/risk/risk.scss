@@ -5,7 +5,7 @@
   top: var(--space4);
   z-index: 1;
   transition: min-height 0.5s ease-in-out;
-  min-height: 100px;
+  min-height: 108px;
   display: flex;
   flex-direction: column;
 
@@ -66,6 +66,7 @@
 
   &__title {
     font-size: var(--main-text-fs);
+    margin-bottom: var(--space1);
     font-weight: 700;
 
     #{$this}--finished & {

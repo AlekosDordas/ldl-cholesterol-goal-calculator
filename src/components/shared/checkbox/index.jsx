@@ -15,9 +15,18 @@ const Checkbox = forwardRef(({ label, id }, ref) => {
     setIsChecked(e.target.checked)
   }, [])
 
+  const keyDownHandler = useCallback(
+    e => {
+      if (e.key === " " || e.key === "Enter") {
+        ref.current.click()
+      }
+    },
+    [ref]
+  )
+
   return (
     <span className={`Checkbox ${isChecked ? "Checkbox--checked" : ""}`}>
-      <label htmlFor={uuid}>
+      <label tabIndex="0" htmlFor={uuid} onKeyDown={keyDownHandler}>
         <span>{label}</span>
         <span className="Checkbox__icon">
           {isChecked && <img src={checkmark} alt="" />}

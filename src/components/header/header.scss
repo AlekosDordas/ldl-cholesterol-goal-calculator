@@ -3,10 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px var(--side-paddings);
+  padding: var(--space4) var(--space5);
 
   &__logo {
-    width: 32px;
+    width: var(--logo-size);
 
     img {
       max-width: 100%;
@@ -15,7 +15,7 @@
   }
 
   &__title {
-    font-size: 14px;
+    font-size: var(--heading-text-fs);
     font-weight: 900;
     text-align: center;
   }

@@ -1,4 +1,4 @@
-import { Title, Subtitle } from "../../shared/titles"
+import { Title, SecondaryTitle, Subtitle } from "../../shared/titles"
 import Checkbox from "../../shared/checkbox"
 import { useStep } from "./use-step.hook"
 
@@ -30,12 +30,14 @@ const DmStep = () => {
             id="targetOrganDamage"
             label={texts.targetOrganDamageLabel}
           />
-          <h2>{texts.majorAscvdRiskFactorsTitle}</h2>
+          <SecondaryTitle>{texts.majorAscvdRiskFactorsTitle}</SecondaryTitle>
+          <Subtitle>{texts.majorAscvdRiskFactorsSubtitle}</Subtitle>
           <Checkbox ref={htn} id="htn" label={texts.htnLabel} />
           <Checkbox ref={dyslip} id="dyslip" label={texts.dyslipLabel} />
           <Checkbox ref={smoker} id="smoker" label={texts.smokerLabel} />
           <Checkbox ref={family} id="family" label={texts.familyLabel} />
-          <h2>{texts.onsetDurationTitle}</h2>
+          <SecondaryTitle>{texts.onsetDurationTitle}</SecondaryTitle>
+          <Subtitle>{texts.onsetDurationSubtitle}</Subtitle>
           <Checkbox
             ref={youngRecent}
             id="youngRecent"

@@ -1,9 +1,14 @@
 .Step {
   position: relative;
   display: none;
-  margin-top: 24px;
+  margin-top: var(--space5);
+  flex-grow: 1;
+  width: 100%;
+  max-width: 950px;
+  align-self: center;
 
   &.is-visible {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }

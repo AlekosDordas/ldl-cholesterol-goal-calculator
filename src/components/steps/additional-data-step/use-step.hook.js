@@ -6,7 +6,6 @@ export const useStep = () => {
   const { translatedContent: texts } = useLanguage()
   const { updateRisk } = useRisk()
 
-  const [ready, setReady] = useState(false)
   const [score2, setScore2] = useState()
 
   const age = useRef()
@@ -176,10 +175,8 @@ export const useStep = () => {
       else updateRisk("additionalData", 1)
 
       setScore2(score2)
-      setReady(true)
     } else {
       setScore2(undefined)
-      setReady(false)
       updateRisk("additionalData", 1)
     }
   }, [score2_table, score2op_table, updateRisk])
@@ -194,7 +191,6 @@ export const useStep = () => {
     smoker,
     sex,
     texts,
-    ready,
     score2,
     handleFormChange,
   }

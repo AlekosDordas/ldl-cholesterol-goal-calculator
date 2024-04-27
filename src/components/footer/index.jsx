@@ -3,13 +3,14 @@ import { useLanguage } from "../../providers/language"
 import "./footer.scss"
 
 const Footer = () => {
-  const { nextStep, previousStep, isFirst, isLast } = useStep()
+  const { nextStep, previousStep, isFirst, shouldFinish, hasFinished } =
+    useStep()
   const { translatedContent: texts } = useLanguage()
 
   return (
     <footer className="Footer">
       <nav className="Footer__nav">
-        {!isFirst && (
+        {!isFirst && !hasFinished && (
           <button className="Footer__nav-button" onClick={previousStep}>
             {texts.previousLabel}
           </button>
@@ -18,7 +19,11 @@ const Footer = () => {
           className="Footer__nav-button Footer__nav-button--primary"
           onClick={nextStep}
         >
-          {!isLast ? texts.nextLabel : texts.finishLabel}
+          {hasFinished
+            ? texts.restartLabel
+            : shouldFinish
+            ? texts.finishLabel
+            : texts.nextLabel}
         </button>
       </nav>
       <hr />

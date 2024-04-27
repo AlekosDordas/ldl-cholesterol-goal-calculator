@@ -8,6 +8,9 @@
   "finishLabel": {
     "en": "Finish"
   },
+  "restartLabel": {
+    "en": "Restart"
+  },
   "lowRiskTitle": {
     "en": "Low Risk"
   },
@@ -36,7 +39,7 @@
     "en": "Step 1: Evidence of established Atherosclerotic CardioVascular Disease (ASCVD)?"
   },
   "ascvdSubtitle": {
-    "en": "Check any that applies:"
+    "en": "Check all that apply:"
   },
   "acsLabel": {
     "en": "Previous ACS (MI or UA)"
@@ -69,7 +72,10 @@
     "en": "Target organ damage (albuminuria, retinopathy, neuropathy)?"
   },
   "majorAscvdRiskFactorsTitle": {
-    "en": "Other Major ASCVD Risk factors? (check all that apply)"
+    "en": "Other Major ASCVD Risk factors?"
+  },
+  "majorAscvdRiskFactorsSubtitle": {
+    "en": "Check all that apply:"
   },
   "htnLabel": {
     "en": "Hypertension"
@@ -84,7 +90,10 @@
     "en": "Family history of premature coronary disease (usually ealier than 55 for men, 60 for women)"
   },
   "onsetDurationTitle": {
-    "en": "Onset and Duration (choose one that best describes your patient)"
+    "en": "Onset and Duration"
+  },
+  "onsetDurationSubtitle": {
+    "en": "Choose one that best describes your patient:"
   },
   "youngRecentLabel": {
     "en": "Young patients (less than 35 for T1DM, less than 50 for T2DM) with LESS than 10 years duration"
@@ -99,7 +108,7 @@
     "en": "Step 3: Chronic Kindey Disease (CKD) Assessment"
   },
   "ckdSubtitle": {
-    "en": "Does your patient have known CKD? (leave empty if No)"
+    "en": "Does your patient have known CKD?"
   },
   "severeCkdLabel": {
     "en": "Yes - Severe CKD (eGFR less than 30 mL/min/1.73m²)"
@@ -166,6 +175,12 @@
   },
   "tenYearRiskTitle": {
     "en": "10 year risk of CV event"
+  },
+  "tenYearRiskMissing": {
+    "en": "Please fill all the above values to calculate 10 year risk of CV event"
+  },
+  "riskModifiers": {
+    "en": "Remember to consider Risk Modifiers"
   },
   "creditsLine1": {
     "en": "65+ Outpatient Clinic - Department of Cardiology"

@@ -1,14 +1,25 @@
 .Title {
-  font-size: 16px;
+  font-size: var(--heading-text-fs);
   font-weight: 900;
   letter-spacing: 0.1px;
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: var(--space2);
+}
+
+.SecondaryTitle {
+  font-size: var(--main-text-fs);
+  font-weight: 900;
+  letter-spacing: 0.1px;
+  line-height: 1.2;
+  margin-top: var(--space4);
+  margin-bottom: var(--space2);
 }
 
 .Subtitle {
   color: #71727a;
   font-size: var(--main-text-fs);
   font-weight: 400;
+  margin-top: var(--space2);
+  margin-bottom: var(--space4);
 }

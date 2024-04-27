@@ -12,7 +12,7 @@
     width: 100%;
     background: #f8f9fe;
     border-radius: 16px;
-    padding: 4px;
+    padding: var(--space1);
   }
 
   &__option {
@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    padding: var(--space2);
     font-size: var(--main-text-fs);
     font-weight: 700;
     border-radius: 16px;

@@ -1,0 +1,25 @@
+.InfoBox {
+  $this: &;
+
+  position: relative;
+  padding: var(--space4);
+  margin-top: auto;
+  border-radius: 16px;
+  background: #f8f9fe;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &--warning {
+    background: #fff4e4;
+
+    .Subtitle {
+      color: black;
+    }
+  }
+
+  .Title,
+  .Subtitle {
+    margin: 0;
+  }
+}

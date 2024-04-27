@@ -1,17 +1,17 @@
 .Footer {
   position: relative;
   margin-top: auto;
-  padding: var(--side-paddings);
+  padding: var(--space5);
 
   &__nav {
     display: flex;
     gap: 8px;
 
     &-button {
-      flex-grow: 1;
+      flex: 1;
       appearance: none;
       border-radius: 12px;
-      padding: 12px;
+      padding: var(--space3);
       font-size: var(--main-text-fs);
       font-weight: 700;
       display: flex;
@@ -22,6 +22,10 @@
       color: #006ffd;
       cursor: pointer;
       transition: transform 0.1s ease-in-out;
+
+      &:first-child:last-child {
+        flex: 1 0 100%;
+      }
 
       &--primary {
         background-color: #006ffd;
@@ -35,7 +39,7 @@
   }
 
   hr {
-    margin: 16px 0;
+    margin: var(--space4) 0;
     border: none;
     border-top: 1px solid #d4d6dd;
   }

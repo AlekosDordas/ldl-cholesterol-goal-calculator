@@ -1,6 +1,27 @@
 :root {
-  --side-paddings: 24px;
+  --logo-size: 32px;
+  --big-text-fs: 24px;
+  --heading-text-fs: 16px;
   --main-text-fs: 14px;
+  --space1: 4px;
+  --space2: 8px;
+  --space3: 12px;
+  --space4: 16px;
+  --space5: 24px;
+  --space6: 32px;
+
+  @media (min-width: 1024px) {
+    --logo-size: 48px;
+    --big-text-fs: 32px;
+    --heading-text-fs: 20px;
+    --main-text-fs: 18px;
+    --space1: 8px;
+    --space2: 12px;
+    --space3: 16px;
+    --space4: 24px;
+    --space5: 32px;
+    --space6: 48px;
+  }
 }
 
 body {
@@ -28,8 +49,13 @@ body,
 .page {
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 main {
-  padding: 0 var(--side-paddings);
+  padding: 0 var(--space5);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }

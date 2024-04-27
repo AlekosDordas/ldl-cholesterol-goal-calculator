@@ -3,7 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4px;
+  padding: var(--space1);
+  margin-bottom: var(--space2);
 
   label {
     font-size: var(--main-text-fs);
@@ -16,9 +17,10 @@
   }
 
   button {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     background: #eaf2ff;
+    font-size: var(--main-text-fs);
     font-weight: 900;
     line-height: 1;
     color: #006ffd;
@@ -40,7 +42,7 @@
     border: none;
     outline: none;
     background: none;
-    font-size: 16px;
+    font-size: var(--main-text-fs);
     color: #1f2024;
     width: 50px;
     text-align: center;

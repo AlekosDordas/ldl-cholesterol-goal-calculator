@@ -1,35 +1,95 @@
 .Risk {
+  $this: &;
+
+  position: sticky;
+  top: var(--space4);
+  z-index: 1;
+  transition: min-height 0.5s ease-in-out;
+  min-height: 100px;
   display: flex;
-  gap: 16px;
-  justify-content: start;
-  align-items: center;
-  border-radius: 16px;
-  padding: 16px;
-  min-height: 84px;
+  flex-direction: column;
 
-  &--low {
-    background-color: #e7f4e8;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(-1 * var(--space4));
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(white, white 80%, rgba(0, 0, 0, 0));
+    z-index: 0;
   }
 
-  &--medium {
-    background-color: #eaf2ff;
+  &--finished {
+    text-align: center;
+    min-height: 100%;
   }
 
-  &--high {
-    background-color: #fff4e4;
+  &__wrapper {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    gap: var(--space4);
+    justify-content: start;
+    align-items: center;
+    border-radius: 16px;
+    padding: var(--space4);
+    margin-bottom: var(--space4);
+
+    #{$this}--finished & {
+      justify-content: center;
+    }
+
+    #{$this}--low & {
+      background-color: #e7f4e8;
+    }
+
+    #{$this}--medium & {
+      background-color: #eaf2ff;
+    }
+
+    #{$this}--high & {
+      background-color: #fff4e4;
+    }
+
+    #{$this}--veryHigh & {
+      background-color: #ffe2e5;
+    }
   }
 
-  &--veryHigh {
-    background-color: #ffe2e5;
+  &__icon {
+    #{$this}--finished & {
+      display: none;
+    }
   }
 
   &__title {
     font-size: var(--main-text-fs);
     font-weight: 700;
+
+    #{$this}--finished & {
+      margin-bottom: var(--space6);
+      font-size: var(--big-text-fs);
+    }
   }
 
   &__subtitle {
     font-size: var(--main-text-fs);
     font-weight: 400;
+
+    #{$this}--finished & {
+      font-size: var(--heading-text-fs);
+    }
+  }
+
+  &__finish-text {
+    display: none;
+    font-size: var(--heading-text-fs);
+    margin-top: var(--space4);
+
+    #{$this}--finished & {
+      display: block;
+    }
   }
 }

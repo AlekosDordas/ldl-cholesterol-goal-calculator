@@ -1,6 +1,7 @@
 .Dropdown {
   position: relative;
   display: block;
+  margin-bottom: var(--space3);
 
   label,
   select {

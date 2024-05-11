@@ -60,3 +60,7 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+html[lang="el"] * {
+  letter-spacing: 0;
+}

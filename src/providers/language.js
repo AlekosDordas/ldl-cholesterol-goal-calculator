@@ -10,7 +10,7 @@ import translations from "../data/translations.json"
 const LanguageContext = createContext()
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState("en")
+  const [language, setLanguage] = useState("el")
 
   const changeLanguage = useCallback(newLanguage => {
     const firstUrlPart = window.location.pathname.split("/")?.[1]
@@ -21,6 +21,7 @@ export const LanguageProvider = ({ children }) => {
   }, [])
 
   useEffect(() => {
+    document.documentElement.lang = language
     const firstUrlPart = window.location.pathname.split("/")?.[1]
     if (["en", "el"].includes(firstUrlPart) && firstUrlPart !== language)
       setLanguage(firstUrlPart)

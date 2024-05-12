@@ -1,10 +1,11 @@
-import { useCallback, useMemo, useRef, useState } from "react"
+import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import { useLanguage } from "../../../providers/language"
 import { useRisk } from "../../../providers/risk"
 
 export const useStep = () => {
-  const { translatedContent: texts } = useLanguage()
-  const { updateRisk } = useRisk()
+  const { translatedContent: texts, reportingLanguageContent: reportingTexts } =
+    useLanguage()
+  const { updateRisk, updateAnswers } = useRisk()
 
   const [score2, setScore2] = useState()
 
@@ -16,6 +17,49 @@ export const useStep = () => {
   const ldl = useRef()
   const smoker = useRef()
   const sex = useRef()
+
+  const submitAnswers = useCallback(() => {
+    updateAnswers(
+      reportingTexts.ageLabel,
+      !isNaN(score2) ? String(age.current?.value) : ""
+    )
+    updateAnswers(
+      reportingTexts.sbpLabel,
+      !isNaN(score2) ? String(sbp.current?.value) + " mmHg" : ""
+    )
+    updateAnswers(
+      reportingTexts.dbpLabel,
+      !isNaN(score2) ? String(dbp.current?.value) + " mmHg" : ""
+    )
+    updateAnswers(
+      reportingTexts.tcLabel,
+      !isNaN(score2) ? String(tc.current?.value) + " mg/dL" : ""
+    )
+    updateAnswers(
+      reportingTexts.hdlLabel,
+      !isNaN(score2) ? String(hdl.current?.value) + " mg/dL" : ""
+    )
+    updateAnswers(
+      reportingTexts.ldlLabel,
+      !isNaN(score2) ? String(ldl.current?.value) + " mg/dL" : ""
+    )
+    updateAnswers(
+      reportingTexts.smokerLabel,
+      !isNaN(score2) ? (smoker.current?.checked ? "Ναι" : "Όχι") : ""
+    )
+    updateAnswers(
+      reportingTexts.sexLabel,
+      !isNaN(score2) ? String(sex.current?.value) : ""
+    )
+    updateAnswers(
+      reportingTexts.tenYearRiskTitle,
+      !isNaN(score2) ? String(score2 + "%") : ""
+    )
+  }, [reportingTexts, updateAnswers, score2])
+
+  useEffect(() => {
+    submitAnswers()
+  }, [submitAnswers])
 
   const score2op_table = useMemo(
     () => [
@@ -179,7 +223,9 @@ export const useStep = () => {
       setScore2(undefined)
       updateRisk("additionalData", 1)
     }
-  }, [score2_table, score2op_table, updateRisk])
+
+    submitAnswers()
+  }, [score2_table, score2op_table, submitAnswers, updateRisk])
 
   return {
     age,

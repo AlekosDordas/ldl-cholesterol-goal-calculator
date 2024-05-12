@@ -1,10 +1,11 @@
-import { useCallback, useRef, useState } from "react"
+import { useEffect, useCallback, useRef, useState } from "react"
 import { useLanguage } from "../../../providers/language"
 import { useRisk } from "../../../providers/risk"
 
 export const useStep = () => {
-  const { translatedContent: texts } = useLanguage()
-  const { updateRisk } = useRisk()
+  const { translatedContent: texts, reportingLanguageContent: reportingTexts } =
+    useLanguage()
+  const { updateRisk, updateAnswers } = useRisk()
 
   const dm = useRef()
   const targetOrganDamage = useRef()
@@ -17,6 +18,45 @@ export const useStep = () => {
   const t1dm = useRef()
 
   const [hasDm, setHasDm] = useState(dm.current?.checked || false)
+
+  const submitAnswers = useCallback(() => {
+    updateAnswers(
+      reportingTexts.dmSubtitle,
+      dm.current?.checked ? "Ναι" : "Όχι"
+    )
+    updateAnswers(
+      reportingTexts.targetOrganDamageLabel,
+      hasDm ? (targetOrganDamage.current?.checked ? "Ναι" : "Όχι") : ""
+    )
+    updateAnswers(
+      reportingTexts.htnLabel,
+      hasDm ? (htn.current?.checked ? "Ναι" : "Όχι") : ""
+    )
+    updateAnswers(
+      reportingTexts.dyslipLabel,
+      hasDm ? (dyslip.current?.checked ? "Ναι" : "Όχι") : ""
+    )
+    updateAnswers(
+      reportingTexts.smokerLabel,
+      hasDm ? (smoker.current?.checked ? "Ναι" : "Όχι") : ""
+    )
+    updateAnswers(
+      reportingTexts.familyLabel,
+      hasDm ? (family.current?.checked ? "Ναι" : "Όχι") : ""
+    )
+    updateAnswers(
+      reportingTexts.youngRecentLabel,
+      hasDm ? (youngRecent.current?.checked ? "Ναι" : "Όχι") : ""
+    )
+    updateAnswers(
+      reportingTexts.longLabel,
+      hasDm ? (long.current?.checked ? "Ναι" : "Όχι") : ""
+    )
+    updateAnswers(
+      reportingTexts.t1dmLabel,
+      hasDm ? (t1dm.current?.checked ? "Ναι" : "Όχι") : ""
+    )
+  }, [reportingTexts, updateAnswers, hasDm])
 
   const handleFormChange = useCallback(() => {
     if (dm.current?.checked) {
@@ -43,7 +83,13 @@ export const useStep = () => {
       setHasDm(false)
       updateRisk("dm", 1)
     }
-  }, [updateRisk])
+
+    submitAnswers()
+  }, [submitAnswers, updateRisk])
+
+  useEffect(() => {
+    submitAnswers()
+  }, [submitAnswers])
 
   return {
     texts,

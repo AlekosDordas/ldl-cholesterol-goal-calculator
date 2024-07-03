@@ -35,11 +35,6 @@
       &:active {
         transform: scale(0.99);
       }
-
-      &:disabled {
-        cursor: not-allowed;
-        background-color: #71727a;
-      }
     }
   }
 

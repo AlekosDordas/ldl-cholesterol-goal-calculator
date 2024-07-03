@@ -3,9 +3,8 @@ import { useLanguage } from "../../../providers/language"
 import { useRisk } from "../../../providers/risk"
 
 export const useStep = () => {
-  const { translatedContent: texts, reportingLanguageContent: reportingTexts } =
-    useLanguage()
-  const { updateRisk, updateAnswers } = useRisk()
+  const { translatedContent: texts } = useLanguage()
+  const { updateRisk } = useRisk()
 
   const severeCkd = useRef()
   const moderateCkd = useRef()
@@ -68,19 +67,6 @@ export const useStep = () => {
     []
   )
 
-  const submitAnswers = useCallback(() => {
-    updateAnswers(
-      reportingTexts.ckdSubtitle,
-      severeValue || moderateValue || typeof egfrValue === "number"
-        ? severeValue
-          ? reportingTexts.severeCkdLabel
-          : moderateValue
-          ? reportingTexts.moderateCkdLabel
-          : egfrValue + " ml/min/1.73m²"
-        : ""
-    )
-  }, [egfrValue, moderateValue, reportingTexts, severeValue, updateAnswers])
-
   useEffect(() => {
     if ((egfrValue && egfrValue < 30) || severeValue) {
       updateRisk("ckd", 4)
@@ -92,9 +78,7 @@ export const useStep = () => {
     } else {
       updateRisk("ckd", 1)
     }
-
-    submitAnswers()
-  }, [egfrValue, moderateValue, severeValue, submitAnswers, updateRisk])
+  }, [egfrValue, moderateValue, severeValue, updateRisk])
 
   const handleFormChange = useCallback(() => {
     if (eGfrFind.current?.checked) {
@@ -115,8 +99,7 @@ export const useStep = () => {
 
     setSevereValue(severeCkd.current?.checked || false)
     setModerateValue(moderateCkd.current?.checked || false)
-    submitAnswers()
-  }, [calculateEgfr, submitAnswers])
+  }, [calculateEgfr])
 
   return {
     texts,

@@ -38,12 +38,6 @@ export const LanguageProvider = ({ children }) => {
             value[language],
           ])
         ),
-        reportingLanguageContent: Object.fromEntries(
-          Object.entries(translations).map(([text, value]) => [
-            text,
-            value["el"],
-          ])
-        ),
       }}
     >
       {children}

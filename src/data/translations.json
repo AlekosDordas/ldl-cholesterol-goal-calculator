@@ -1,246 +1,429 @@
 {
   "nextLabel": {
     "en": "Next",
-    "el": "Επόμενο"
+    "el": "Επόμενο",
+    "fr": "Suivant",
+    "it": "Successivo",
+    "de": "Nächster"
   },
   "previousLabel": {
     "en": "Previous",
-    "el": "Προηγούμενο"
+    "el": "Προηγούμενο",
+    "fr": "Précédent",
+    "it": "Precedente",
+    "de": "Vorheriger"
   },
   "finishLabel": {
     "en": "Finish",
-    "el": "Τέλος"
+    "el": "Τέλος",
+    "fr": "Terminer",
+    "it": "Termina",
+    "de": "Beenden"
   },
   "restartLabel": {
     "en": "Restart",
-    "el": "Επανεκκίνηση"
+    "el": "Επανεκκίνηση",
+    "fr": "Redémarrer",
+    "it": "Riavvia",
+    "de": "Neustart"
   },
   "headerTitle": {
     "en": "LDL Cholesterol Goal Calculator",
-    "el": "Υπολογισμός Στόχου LDL Xοληστερόλης"
+    "el": "Υπολογισμός Στόχου LDL Xοληστερόλης",
+    "fr": "Calculateur d'objectif de cholestérol LDL",
+    "it": "Calcolatore obiettivo colesterolo LDL",
+    "de": "LDL-Cholesterin-Zielrechner"
   },
   "lowRiskTitle": {
     "en": "Low Risk",
-    "el": "Χαμηλός Κίνδυνος"
+    "el": "Χαμηλός Κίνδυνος",
+    "fr": "Faible Risque",
+    "it": "Rischio Basso",
+    "de": "Geringes Risiko"
   },
   "lowRiskSubtitle": {
     "en": "LDL-C goal is < 116 mg/dL",
-    "el": "Ο στόχος της LDL-C είναι < 116 mg/dL"
+    "el": "Ο στόχος της LDL-C είναι < 116 mg/dL",
+    "fr": "L'objectif du LDL-C est < 116 mg/dL",
+    "it": "L'obiettivo del LDL-C è < 116 mg/dL",
+    "de": "LDL-C-Ziel ist < 116 mg/dL"
   },
   "mediumRiskTitle": {
     "en": "Medium Risk",
-    "el": "Μεσαίος Κίνδυνος"
+    "el": "Μεσαίος Κίνδυνος",
+    "fr": "Risque Moyen",
+    "it": "Rischio Medio",
+    "de": "Mittleres Risiko"
   },
   "mediumRiskSubtitle": {
     "en": "LDL-C goal is < 100 mg/dL",
-    "el": "Ο στόχος της LDL-C είναι < 100 mg/dL"
+    "el": "Ο στόχος της LDL-C είναι < 100 mg/dL",
+    "fr": "L'objectif du LDL-C est < 100 mg/dL",
+    "it": "L'obiettivo del LDL-C è < 100 mg/dL",
+    "de": "LDL-C-Ziel ist < 100 mg/dL"
   },
   "highRiskTitle": {
     "en": "High Risk",
-    "el": "Υψηλός Κίνδυνος"
+    "el": "Υψηλός Κίνδυνος",
+    "fr": "Risque Élevé",
+    "it": "Rischio Alto",
+    "de": "Hohes Risiko"
   },
   "highRiskSubtitle": {
     "en": "LDL-C goal is < 70 mg/dL and 50% reduction from baseline",
-    "el": "Ο στόχος της LDL-C είναι < 70 mg/dL και μείωση 50% από την αρχική τιμή"
+    "el": "Ο στόχος της LDL-C είναι < 70 mg/dL και μείωση 50% από την αρχική τιμή",
+    "fr": "L'objectif du LDL-C est < 70 mg/dL et une réduction de 50% par rapport à la base",
+    "it": "L'obiettivo del LDL-C è < 70 mg/dL e riduzione del 50% rispetto al basale",
+    "de": "LDL-C-Ziel ist < 70 mg/dL und 50% Reduktion vom Ausgangswert"
   },
   "veryHighRiskTitle": {
     "en": "Very High Risk",
-    "el": "Πολύ υψηλός κίνδυνος"
+    "el": "Πολύ υψηλός κίνδυνος",
+    "fr": "Très Haut Risque",
+    "it": "Rischio Molto Alto",
+    "de": "Sehr hohes Risiko"
   },
   "veryHighRiskSubtitle": {
     "en": "LDL-C goal is < 55 mg/dL and 50% reduction from baseline",
-    "el": "Ο στόχος της LDL-C είναι < 55 mg/dL και μείωση 50% από την αρχική τιμή"
+    "el": "Ο στόχος της LDL-C είναι < 55 mg/dL και μείωση 50% από την αρχική τιμή",
+    "fr": "L'objectif du LDL-C est < 55 mg/dL et une réduction de 50% par rapport à la base",
+    "it": "L'obiettivo del LDL-C è < 55 mg/dL e riduzione del 50% rispetto al basale",
+    "de": "LDL-C-Ziel ist < 55 mg/dL und 50% Reduktion vom Ausgangswert"
   },
   "ascvdTitle": {
     "en": "Step 1: Evidence of established Atherosclerotic CardioVascular Disease (ASCVD)?",
-    "el": "Βήμα 1: Στοιχεία εγκατεστημένης Αθηροσκληρωτικής καρδιαγγειακής νόσου (ASCVD);"
+    "el": "Βήμα 1: Στοιχεία εγκατεστημένης Αθηροσκληρωτικής καρδιαγγειακής νόσου (ASCVD);",
+    "fr": "Étape 1 : Preuve d'une maladie cardiovasculaire athérosclérotique (ASCVD) établie ?",
+    "it": "Passo 1: Prove di malattia cardiovascolare aterosclerotica (ASCVD) stabilita?",
+    "de": "Schritt 1: Nachweis einer etablierten atherosklerotischen Herz-Kreislauf-Erkrankung (ASCVD)?"
   },
   "ascvdSubtitle": {
     "en": "Check all that apply:",
-    "el": "Σημειώστε ό,τι ισχύει:"
+    "el": "Σημειώστε ό,τι ισχύει:",
+    "fr": "Cocher tout ce qui s'applique :",
+    "it": "Seleziona tutto ciò che si applica:",
+    "de": "Bitte zutreffendes ankreuzen:"
   },
   "acsLabel": {
     "en": "Previous ACS (MI or UA)",
-    "el": "Προηγούμενο Οξύ Στεφανιαίο Σύνδρομο ACS (MI ή UA)"
+    "el": "Προηγούμενο Οξύ Στεφανιαίο Σύνδρομο ACS (MI ή UA)",
+    "fr": "ACS précédent (infarctus du myocarde ou angine instable)",
+    "it": "Precedente ACS (MI o UA)",
+    "de": "Vorheriges ACS (MI oder UA)"
   },
   "revascularizationLabel": {
     "en": "Undergone revascularization procedures (PCI, CABG, or other arterial revascularization)",
-    "el": "Υποβλήθηκε σε επεμβάσεις επαναγγείωσης (PCI, CABG ή άλλη αρτηριακή επαναγγείωση)"
+    "el": "Υποβλήθηκε σε επεμβάσεις επαναγγείωσης (PCI, CABG ή άλλη αρτηριακή επαναγγείωση)",
+    "fr": "Procédures de revascularisation subies (PCI, pontage aorto-coronarien ou autres revascularisations artérielles)",
+    "it": "Procedura di rivascolarizzazione effettuata (PCI, CABG o altra rivascolarizzazione arteriosa)",
+    "de": "Durchgeführte Revaskularisationsverfahren (PCI, CABG oder andere arterielle Revaskularisationen)"
   },
   "strokeLabel": {
     "en": "Stroke or TIA",
-    "el": "Εγκεφαλικό επεισόδιο ή TIA"
+    "el": "Εγκεφαλικό επεισόδιο ή TIA",
+    "fr": "Accident vasculaire cérébral ou AIT",
+    "it": "Ictus o TIA",
+    "de": "Schlaganfall oder TIA"
   },
   "padLabel": {
     "en": "Peripheral arterial disease (PAD)",
-    "el": "Περιφερική αρτηριακή νόσος (PAD)"
+    "el": "Περιφερική αρτηριακή νόσος (PAD)",
+    "fr": "Maladie artérielle périphérique (PAD)",
+    "it": "Malattia arteriosa periferica (PAD)",
+    "de": "Periphere arterielle Krankheit (PAD)"
   },
   "angioLabel": {
     "en": "Significant plaque on angiography or CT scan (usually at least 50% stenosis)",
-    "el": "Σημαντική πλάκα στην αγγειογραφία ή στην αξονική τομογραφία (συνήθως τουλάχιστον 50% στένωση)"
+    "el": "Σημαντική πλάκα στην αγγειογραφία ή στην αξονική τομογραφία (συνήθως τουλάχιστον 50% στένωση)",
+    "fr": "Plaque significative à l'angiographie ou au scanner (généralement au moins 50% de sténose)",
+    "it": "Placca significativa all'angiografia o alla TAC (generalmente almeno il 50% di stenosi)",
+    "de": "Signifikante Plaquebildung in Angiografie oder CT (üblicherweise mindestens 50% Stenose)"
   },
   "carotidLabel": {
     "en": "Significant plaque on carotid ultrasound (usually at least 50% stenosis)",
-    "el": "Σημαντική πλάκα στο υπερηχογράφημα καρωτίδων (συνήθως τουλάχιστον 50% στένωση)"
+    "el": "Σημαντική πλάκα στο υπερηχογράφημα καρωτίδων (συνήθως τουλάχιστον 50% στένωση)",
+    "fr": "Plaque significative à l'échographie carotidienne (généralement au moins 50% de sténose)",
+    "it": "Placca significativa all'ecografia carotidea (generalmente almeno il 50% di stenosi)",
+    "de": "Signifikante Plaquebildung in der Karotis-Ultraschalluntersuchung (üblicherweise mindestens 50% Stenose)"
   },
   "dmTitle": {
     "en": "Step 2: Diabetes Mellitus Assessment",
-    "el": "Βήμα 2: Αξιολόγηση του σακχαρώδη διαβήτη"
+    "el": "Βήμα 2: Αξιολόγηση του σακχαρώδη διαβήτη",
+    "fr": "Étape 2 : Évaluation du diabète sucré",
+    "it": "Passo 2: Valutazione del Diabete Mellito",
+    "de": "Schritt 2: Diabetes-Mellitus-Bewertung"
   },
   "dmSubtitle": {
     "en": "Does your patient have Diabetes Mellitus (DM)?",
-    "el": "Έχει ο ασθενής σας σακχαρώδη διαβήτη (ΣΔ);"
+    "el": "Έχει ο ασθενής σας σακχαρώδη διαβήτη (ΣΔ);",
+    "fr": "Votre patient a-t-il un diabète sucré (DM) ?",
+    "it": "Il tuo paziente ha il Diabete Mellito (DM)?",
+    "de": "Hat Ihr Patient Diabetes Mellitus (DM)?"
   },
   "dmLabel": {
     "en": "Yes",
-    "el": "Ναι"
+    "el": "Ναι",
+    "fr": "Oui",
+    "it": "Sì",
+    "de": "Ja"
   },
   "targetOrganDamageLabel": {
     "en": "Target organ damage (albuminuria, retinopathy, neuropathy)?",
-    "el": "Βλάβη στα όργανα-στόχους (λευκωματουρία, αμφιβληστροειδοπάθεια, νευροπάθεια);"
+    "el": "Βλάβη στα όργανα-στόχους (λευκωματουρία, αμφιβληστροειδοπάθεια, νευροπάθεια);",
+    "fr": "Dommage aux organes cibles (albuminurie, rétinopathie, neuropathie) ?",
+    "it": "Danni agli organi bersaglio (albuminuria, retinopatia, neuropatia)?",
+    "de": "Zielschäden (Albuminurie, Retinopathie, Neuropathie)?"
   },
   "majorAscvdRiskFactorsTitle": {
     "en": "Other Major ASCVD Risk factors?",
-    "el": "Άλλοι μείζονες παράγοντες κινδύνου ASCVD;"
+    "el": "Άλλοι μείζονες παράγοντες κινδύνου ASCVD;",
+    "fr": "Autres facteurs de risque majeurs d'ASCVD ?",
+    "it": "Altri fattori di rischio maggiori per ASCVD?",
+    "de": "Andere wesentliche ASCVD-Risikofaktoren?"
   },
   "majorAscvdRiskFactorsSubtitle": {
     "en": "Check all that apply:",
-    "el": "Επιλέξτε όσα ισχύουν:"
+    "el": "Επιλέξτε όσα ισχύουν:",
+    "fr": "Cocher tout ce qui s'applique :",
+    "it": "Seleziona tutto ciò che si applica:",
+    "de": "Bitte zutreffendes ankreuzen:"
   },
   "htnLabel": {
     "en": "Hypertension",
-    "el": "Υπέρταση"
+    "el": "Υπέρταση",
+    "fr": "Hypertension",
+    "it": "Ipertensione",
+    "de": "Hypertonie"
   },
   "dyslipLabel": {
     "en": "Dyslipidemia",
-    "el": "Δυσλιπιδαιμία"
+    "el": "Δυσλιπιδαιμία",
+    "fr": "Dyslipidémie",
+    "it": "Dislipidemia",
+    "de": "Dyslipidämie"
   },
   "smokerLabel": {
     "en": "Smoker",
-    "el": "Καπνιστής"
+    "el": "Καπνιστής",
+    "fr": "Fumeur",
+    "it": "Fumatore",
+    "de": "Raucher"
   },
   "familyLabel": {
     "en": "Family history of premature coronary disease (usually ealier than 55 for men, 60 for women)",
-    "el": "Οικογενειακό ιστορικό πρόωρης στεφανιαίας νόσου (συνήθως άνω των 55 ετών για τους άνδρες, 60 ετών για τις γυναίκες)"
+    "el": "Οικογενειακό ιστορικό πρόωρης στεφανιαίας νόσου (συνήθως άνω των 55 ετών για τους άνδρες, 60 ετών για τις γυναίκες)",
+    "fr": "Antécédents familiaux de maladie coronarienne prématurée (généralement avant 55 ans pour les hommes, 60 ans pour les femmes)",
+    "it": "Storia familiare di malattia coronarica prematura (solitamente prima dei 55 anni per gli uomini, 60 per le donne)",
+    "de": "Familiengeschichte mit vorzeitiger koronarer Herzkrankheit (üblicherweise vor 55 bei Männern, 60 bei Frauen)"
   },
   "onsetDurationTitle": {
     "en": "Onset and Duration",
-    "el": "Έναρξη και διάρκεια"
+    "el": "Έναρξη και διάρκεια",
+    "fr": "Apparition et durée",
+    "it": "Inizio e Durata",
+    "de": "Beginn und Dauer"
   },
   "onsetDurationSubtitle": {
     "en": "Choose one that best describes your patient:",
-    "el": "Επιλέξτε αυτό που περιγράφει καλύτερα τον ασθενή σας:"
+    "el": "Επιλέξτε αυτό που περιγράφει καλύτερα τον ασθενή σας:",
+    "fr": "Choisissez celui qui décrit le mieux votre patient :",
+    "it": "Scegli quello che descrive meglio il tuo paziente:",
+    "de": "Wählen Sie das, was Ihren Patienten am besten beschreibt:"
   },
   "youngRecentLabel": {
     "en": "Young patients (less than 35 for T1DM, less than 50 for T2DM) with LESS than 10 years duration",
-    "el": "Νέοι ασθενείς (κάτω των 35 ετών για τον Τ1ΔΜ, κάτω των 50 ετών για τον Τ2ΔΜ) με διάρκεια μικρότερη των 10 ετών"
+    "el": "Νέοι ασθενείς (κάτω των 35 ετών για τον Τ1ΔΜ, κάτω των 50 ετών για τον Τ2ΔΜ) με διάρκεια μικρότερη των 10 ετών",
+    "fr": "Jeunes patients (moins de 35 ans pour le DT1, moins de 50 ans pour le DT2) avec MOINS de 10 ans de durée",
+    "it": "Giovani pazienti (meno di 35 anni per DM1, meno di 50 per DM2) con MENO di 10 anni di durata",
+    "de": "Junge Patienten (unter 35 für T1DM, unter 50 für T2DM) mit WENIGER als 10 Jahren Dauer"
   },
   "longLabel": {
     "en": "DM with AT LEAST 10 years duration",
-    "el": "DM με διάρκεια τουλάχιστον 10 ετών"
+    "el": "DM με διάρκεια τουλάχιστον 10 ετών",
+    "fr": "DM avec AU MOINS 10 ans de durée",
+    "it": "DM con ALMENO 10 anni di durata",
+    "de": "DM mit MINDESTENS 10 Jahren Dauer"
   },
   "t1dmLabel": {
     "en": "T1DM of long duration (more than 20 years)",
-    "el": "T1DM μακράς διάρκειας (άνω των 20 ετών)"
+    "el": "T1DM μακράς διάρκειας (άνω των 20 ετών)",
+    "fr": "DT1 de longue durée (plus de 20 ans)",
+    "it": "DM1 di lunga durata (più di 20 anni)",
+    "de": "T1DM von langer Dauer (mehr als 20 Jahre)"
   },
   "ckdTitle": {
     "en": "Step 3: Chronic Kindey Disease (CKD) Assessment",
-    "el": "Βήμα 3: Αξιολόγηση της Χρόνιας Νεφρικής Ανεπάρκειας (ΧΝΑ)"
+    "el": "Βήμα 3: Αξιολόγηση της Χρόνιας Νεφρικής Ανεπάρκειας (ΧΝΑ)",
+    "fr": "Étape 3 : Évaluation de la maladie rénale chronique (CKD)",
+    "it": "Passo 3: Valutazione della Malattia Renale Cronica (CKD)",
+    "de": "Schritt 3: Bewertung der chronischen Nierenerkrankung (CKD)"
   },
   "ckdSubtitle": {
     "en": "Does your patient have known CKD?",
-    "el": "Έχει ο ασθενής σας γνωστή ΧΝΑ;"
+    "el": "Έχει ο ασθενής σας γνωστή ΧΝΑ;",
+    "fr": "Votre patient a-t-il une MRC connue ?",
+    "it": "Il tuo paziente ha una CKD nota?",
+    "de": "Hat Ihr Patient eine bekannte CKD?"
   },
   "severeCkdLabel": {
     "en": "Yes - Severe CKD (eGFR less than 30 mL/min/1.73m²)",
-    "el": "Ναι - Σοβαρή ΧΝΑ (eGFR μικρότερος από 30 ml/min/1,73m²)"
+    "el": "Ναι - Σοβαρή ΧΝΑ (eGFR μικρότερος από 30 ml/min/1,73m²)",
+    "fr": "Oui - MRC sévère (DFGe inférieur à 30 mL/min/1,73m²)",
+    "it": "Sì - CKD grave (eGFR inferiore a 30 mL/min/1.73m²)",
+    "de": "Ja - Schwere CKD (eGFR weniger als 30 mL/min/1,73m²)"
   },
   "moderateCkdLabel": {
     "en": "Yes - Moderate CKD (eGFR between 30 and 60 mL/min/1.73m²)",
-    "el": "Ναι - Μέτρια ΧΝΑ (eGFR μεταξύ 30 και 60 ml/min/1.73m²)"
+    "el": "Ναι - Μέτρια ΧΝΑ (eGFR μεταξύ 30 και 60 ml/min/1.73m²)",
+    "fr": "Oui - MRC modérée (DFGe entre 30 et 60 mL/min/1,73m²)",
+    "it": "Sì - CKD moderata (eGFR tra 30 e 60 mL/min/1.73m²)",
+    "de": "Ja - Mittelschwere CKD (eGFR zwischen 30 und 60 mL/min/1,73m²)"
   },
   "eGfrFindLabel": {
     "en": "I don't know eGFR, let's calulate",
-    "el": "Δεν γνωρίζω τον eGFR, ας τον υπολογίσουμε"
+    "el": "Δεν γνωρίζω τον eGFR, ας τον υπολογίσουμε",
+    "fr": "Je ne connais pas le DFGe, calculons-le",
+    "it": "Non conosco l'eGFR, calcoliamolo",
+    "de": "Ich kenne die eGFR nicht, lassen Sie uns berechnen"
   },
   "eGfrFindDescription": {
     "en": "eGFR estimation is based on CKD-EPI (2021), without race coefficient",
-    "el": "Η εκτίμηση του eGFR βασίζεται στο CKD-EPI (2021), χωρίς συντελεστή φυλής"
+    "el": "Η εκτίμηση του eGFR βασίζεται στο CKD-EPI (2021), χωρίς συντελεστή φυλής",
+    "fr": "L'estimation du DFGe est basée sur CKD-EPI (2021), sans coefficient racial",
+    "it": "La stima dell'eGFR si basa su CKD-EPI (2021), senza coefficiente razziale",
+    "de": "eGFR-Schätzung basiert auf CKD-EPI (2021), ohne Rassenkoeffizient"
   },
   "creatinineLabel": {
     "en": "Serum Creatinine (mg/dL)",
-    "el": "Κρεατινίνη ορού (mg/dL)"
+    "el": "Κρεατινίνη ορού (mg/dL)",
+    "fr": "Créatinine sérique (mg/dL)",
+    "it": "Creatinina sierica (mg/dL)",
+    "de": "Serumkreatinin (mg/dL)"
   },
   "ageLabel": {
     "en": "Patient age",
-    "el": "Ηλικία ασθενούς"
+    "el": "Ηλικία ασθενούς",
+    "fr": "Âge du patient",
+    "it": "Età del paziente",
+    "de": "Patientenalter"
   },
   "sexLabel": {
     "en": "Patient gender",
-    "el": "Φύλο ασθενούς"
+    "el": "Φύλο ασθενούς",
+    "fr": "Genre du patient",
+    "it": "Genere del paziente",
+    "de": "Geschlecht des Patienten"
   },
   "maleLabel": {
     "en": "Male",
-    "el": "Άνδρας"
+    "el": "Άνδρας",
+    "fr": "Masculin",
+    "it": "Maschile",
+    "de": "Männlich"
   },
   "femaleLabel": {
     "en": "Female",
-    "el": "Γυναίκα"
+    "el": "Γυναίκα",
+    "fr": "Féminin",
+    "it": "Femminile",
+    "de": "Weiblich"
   },
   "eGfr": {
     "en": "eGfr",
-    "el": "eGfr"
+    "el": "eGfr",
+    "fr": "DFGe",
+    "it": "eGfr",
+    "de": "eGFR"
   },
   "creatinineAgeGenderMissing": {
     "en": "Please enter correct creatinine, age and gender values",
-    "el": "Συμπληρώστε σωστές τιμές κρεατινίνης, ηλικίας και φύλου"
+    "el": "Συμπληρώστε σωστές τιμές κρεατινίνης, ηλικίας και φύλου",
+    "fr": "Veuillez entrer les valeurs correctes de créatinine, âge et genre",
+    "it": "Per favore inserisci i valori corretti di creatinina, età e genere",
+    "de": "Bitte geben Sie die korrekten Werte für Kreatinin, Alter und Geschlecht ein"
   },
   "additionalDataTitle": {
     "en": "Step 4: Additional data needed for risk estimation",
-    "el": "Βήμα 4: Πρόσθετα δεδομένα που απαιτούνται για την εκτίμηση του κινδύνου"
+    "el": "Βήμα 4: Πρόσθετα δεδομένα που απαιτούνται για την εκτίμηση του κινδύνου",
+    "fr": "Étape 4 : Données supplémentaires nécessaires pour l'estimation du risque",
+    "it": "Passo 4: Dati aggiuntivi necessari per la stima del rischio",
+    "de": "Schritt 4: Zusätzliche Daten für die Risikobewertung benötigt"
   },
   "additionalDataSubtitle": {
     "en": "No established ASCVD or Diabetes. 10 year CV risk estimation and checking for markedly elevated single risk factors",
-    "el": "Δεν έχει διαπιστωθεί Αθηροσκληρωτική καρδιαγγειακή νόσος ή Διαβήτης. Εκτίμηση κινδύνου καρδιαγγειακού επεισοδίου για 10 έτη και έλεγχος για σημαντικά αυξημένους μεμονωμένους παράγοντες κινδύνου"
+    "el": "Δεν έχει διαπιστωθεί Αθηροσκληρωτική καρδιαγγειακή νόσος ή Διαβήτης. Εκτίμηση κινδύνου καρδιαγγειακού επεισοδίου για 10 έτη και έλεγχος για σημαντικά αυξημένους μεμονωμένους παράγοντες κινδύνου",
+    "fr": "Pas d'ASCVD ou de diabète établis. Estimation du risque CV sur 10 ans et vérification des facteurs de risque uniques nettement élevés",
+    "it": "Nessuna ASCVD o Diabete stabilito. Stima del rischio CV a 10 anni e controllo per fattori di rischio singoli marcatamente elevati",
+    "de": "Kein etabliertes ASCVD oder Diabetes. 10-Jahres-CV-Risikoabschätzung und Überprüfung auf deutlich erhöhte einzelne Risikofaktoren"
   },
   "sbpLabel": {
     "en": "Systolic BP (mmHg)",
-    "el": "Συστολική ΑΠ (mmHg)"
+    "el": "Συστολική ΑΠ (mmHg)",
+    "fr": "Pression artérielle systolique (mmHg)",
+    "it": "Pressione sistolica (mmHg)",
+    "de": "Systolischer Blutdruck (mmHg)"
   },
   "dbpLabel": {
     "en": "Diastolic BP (mmHg)",
-    "el": "Διαστολική ΑΠ (mmHg)"
+    "el": "Διαστολική ΑΠ (mmHg)",
+    "fr": "Pression artérielle diastolique (mmHg)",
+    "it": "Pressione diastolica (mmHg)",
+    "de": "Diastolischer Blutdruck (mmHg)"
   },
   "tcLabel": {
     "en": "Total Cholesterol (mg/dL)",
-    "el": "Ολική Xοληστερόλη (mg/dL)"
+    "el": "Ολική Xοληστερόλη (mg/dL)",
+    "fr": "Cholestérol total (mg/dL)",
+    "it": "Colesterolo totale (mg/dL)",
+    "de": "Totales Cholesterin (mg/dL)"
   },
   "hdlLabel": {
     "en": "HDL Cholesterol (mg/dL)",
-    "el": "HDL Xοληστερόλη (mg/dL)"
+    "el": "HDL Xοληστερόλη (mg/dL)",
+    "fr": "Cholestérol HDL (mg/dL)",
+    "it": "Colesterolo HDL (mg/dL)",
+    "de": "HDL-Cholesterin (mg/dL)"
   },
   "ldlLabel": {
     "en": "LDL Cholesterol (mg/dL)",
-    "el": "LDL Xοληστερόλη (mg/dL):"
+    "el": "LDL Xοληστερόλη (mg/dL):",
+    "fr": "Cholestérol LDL (mg/dL)",
+    "it": "Colesterolo LDL (mg/dL)",
+    "de": "LDL-Cholesterin (mg/dL)"
   },
   "tenYearRiskTitle": {
     "en": "10 year risk of CV event",
-    "el": "10ετής κίνδυνος καρδιαγγειακού επεισοδίου"
+    "el": "10ετής κίνδυνος καρδιαγγειακού επεισοδίου",
+    "fr": "Risque de 10 ans d'événement CV",
+    "it": "Rischio a 10 anni di evento CV",
+    "de": "10-Jahres-Risiko für CV-Ereignis"
   },
   "tenYearRiskMissing": {
     "en": "Please fill all the above values to calculate 10 year risk of CV event",
-    "el": "Συμπληρώστε όλες τις παραπάνω τιμές για να υπολογιστεί ο 10ετής κίνδυνος καρδιαγγειακού επεισοδίου"
+    "el": "Συμπληρώστε όλες τις παραπάνω τιμές για να υπολογιστεί ο 10ετής κίνδυνος καρδιαγγειακού επεισοδίου",
+    "fr": "Veuillez remplir toutes les valeurs ci-dessus pour calculer le risque d'événement CV sur 10 ans",
+    "it": "Compila tutti i valori sopra per calcolare il rischio di evento CV a 10 anni",
+    "de": "Bitte füllen Sie alle oben genannten Werte aus, um das 10-Jahres-Risiko für CV-Ereignisse zu berechnen"
   },
   "riskModifiers": {
-    "en": "Remember to consider Risk Modifiers",
-    "el": "Θυμηθείτε να λάβετε υπόψιν τους παράγοντες κινδύνου "
+    "en": "Take into account the Risk Modifiers",
+    "el": "Λάβετε υπόψιν τους τροποποιητές κινδύνου",
+    "fr": "Prenez en compte les modificateurs de risque",
+    "it": "Prendere in considerazione i modificatori di rischio",
+    "de": "Berücksichtigen Sie die Risikomodifikatoren"
   },
   "creditsLine1": {
     "en": "65+ Outpatient Clinic - Department of Cardiology",
-    "el": "Ιατρείο 65+ - Τμήμα Καρδιολογίας"
+    "el": "Ιατρείο 65+ - Τμήμα Καρδιολογίας",
+    "fr": "Clinique ambulatoire des plus de 65 ans - Département de cardiologie",
+    "it": "Clinica ambulatoriale 65+ - Dipartimento di Cardiologia",
+    "de": "65+ Ambulanzklinik - Abteilung für Kardiologie"
   },
   "creditsLine2": {
     "en": "General Hospital Sismanogleio - Am. Fleming",
-    "el": "Γενικό Νοσοκομείο «Σισμανόγλειο - Αμαλία Φλέμιγκ»"
+    "el": "Γενικό Νοσοκομείο «Σισμανόγλειο - Αμαλία Φλέμιγκ»",
+    "fr": "Hôpital général Sismanogleio - Am. Fleming",
+    "it": "Ospedale Generale Sismanogleio - Am. Fleming",
+    "de": "Allgemeines Krankenhaus Sismanogleio - Am. Fleming"
   }
 }

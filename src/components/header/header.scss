@@ -3,9 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: var(--space3);
   padding: var(--space4) var(--space5);
 
   &__logo {
+    flex-shrink: 0;
     width: var(--logo-size);
 
     img {
@@ -15,8 +17,13 @@
   }
 
   &__title {
+    flex-shrink: 1;
     font-size: var(--heading-text-fs);
     font-weight: 900;
     text-align: center;
+  }
+
+  &__language {
+    flex-shrink: 0;
   }
 }

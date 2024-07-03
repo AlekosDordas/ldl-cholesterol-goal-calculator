@@ -4,6 +4,7 @@ import {
   useContext,
   useEffect,
   useCallback,
+  useMemo,
 } from "react"
 import translations from "../data/translations.json"
 
@@ -11,6 +12,8 @@ const LanguageContext = createContext()
 
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState("el")
+
+  const availableLanguages = useMemo(() => ["el", "en", "fr", "it", "de"], [])
 
   const changeLanguage = useCallback(newLanguage => {
     const firstUrlPart = window.location.pathname.split("/")?.[1]
@@ -23,9 +26,9 @@ export const LanguageProvider = ({ children }) => {
   useEffect(() => {
     document.documentElement.lang = language
     const firstUrlPart = window.location.pathname.split("/")?.[1]
-    if (["en", "el"].includes(firstUrlPart) && firstUrlPart !== language)
+    if (availableLanguages.includes(firstUrlPart) && firstUrlPart !== language)
       setLanguage(firstUrlPart)
-  }, [setLanguage, language])
+  }, [setLanguage, language, availableLanguages])
 
   return (
     <LanguageContext.Provider
@@ -38,6 +41,7 @@ export const LanguageProvider = ({ children }) => {
             value[language],
           ])
         ),
+        availableLanguages,
       }}
     >
       {children}

@@ -6,11 +6,26 @@
   appearance: none;
   border: none;
   outline: none;
+  padding: 0 var(--space1);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &--selected {
+    img {
+      box-shadow: 0 0 0 1px black;
+    }
+  }
 
   img {
     max-width: 100%;
     max-height: 100%;
     border-radius: 50%;
     cursor: pointer;
+  }
+
+  span {
+    text-transform: uppercase;
+    font-size: var(--heading-text-fs);
   }
 }
